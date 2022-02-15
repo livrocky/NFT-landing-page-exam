@@ -1,2 +1,19 @@
 @import url(reset.css);
 @import url(common.css);
+
+/* HEADERIS */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.burger-menu {
+  color: gray;
+  font-size: larger;
+}
+
+/* HEADERIS BAIGIASI */
+/* HERO PRASIDEDA */
