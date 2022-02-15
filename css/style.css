@@ -17,3 +17,16 @@
 
 /* HEADERIS BAIGIASI */
 /* HERO PRASIDEDA */
+
+.above-title {
+  text-transform: uppercase;
+  color: #ff3998;
+}
+
+.paragraph {
+  color: #555555;
+  font-size: 20px;
+  line-height: 30px;
+  line-height: 150%;
+  vertical-align: top;
+}
