@@ -3,15 +3,16 @@
 
 /* HEADERIS */
 .logo {
-  width: 80%;
+  width: 100%;
 }
 
 .header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
-  max-width: 280px;
+  margin-bottom: 70px;
+  padding-right: 30px;
+  max-width: 100%;
 }
 
 .burger-menu {
@@ -22,13 +23,27 @@
 /* HEADERIS BAIGIASI */
 /* HERO PRASIDEDA */
 
+.main-text {
+  max-width: 63%;
+  position: absolute;
+}
+
 .pink-nft {
-  width: 140%;
+  width: 100%;
+  position: relative;
+  left: 200px;
+  bottom: 73px;
 }
 
 .above-title {
   text-transform: uppercase;
   color: #ff3998;
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 48px;
 }
 
 .sign-up-btn {
@@ -45,9 +60,7 @@
 }
 
 .paragraph {
-  color: #555555;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 21px;
   line-height: 150%;
   vertical-align: top;
   color: rgba(196, 196, 196, 1);
@@ -58,6 +71,7 @@
 .upsell {
   background-color: rgb(81, 227, 19);
   margin-bottom: 40px;
+  margin-top: 80px;
 }
 
 .upsell-title {
