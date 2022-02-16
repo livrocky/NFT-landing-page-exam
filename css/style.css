@@ -45,6 +45,10 @@ header {
   text-transform: uppercase;
   color: #ff3998;
   margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
 }
 
 .title {
@@ -70,7 +74,7 @@ header {
   font-size: 21px;
   line-height: 150%;
   vertical-align: top;
-  color: rgba(196, 196, 196, 1);
+  color: rgba(85, 85, 85, 1);
 }
 
 /* UPSELL */
@@ -156,7 +160,7 @@ header {
   justify-content: space-between;
   background-color: #eeeeee;
   padding: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 div.card-info {
@@ -210,4 +214,25 @@ div.card-info {
 
 .showcase-cards {
   display: flex;
+}
+
+/* SHOWCARDS DONE */
+
+/* FOOTER UPSELL */
+
+.footer-upsell-nft {
+  width: 100%;
+  position: relative;
+  left: 220px;
+  bottom: -100px;
+}
+
+.footer-main-text {
+  max-width: 50%;
+  position: absolute;
+}
+
+.footer-title {
+  margin-bottom: 30px;
+  font-size: 59px;
 }
