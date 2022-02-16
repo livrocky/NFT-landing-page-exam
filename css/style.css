@@ -207,3 +207,7 @@ div.card-info {
   width: 13px;
   right: 120px;
 }
+
+.showcase-cards {
+  display: flex;
+}
