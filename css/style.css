@@ -2,12 +2,16 @@
 @import url(common.css);
 
 /* HEADERIS */
+.logo {
+  width: 80%;
+}
 
 .header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  margin-bottom: 60px;
+  max-width: 280px;
 }
 
 .burger-menu {
@@ -18,9 +22,26 @@
 /* HEADERIS BAIGIASI */
 /* HERO PRASIDEDA */
 
+.pink-nft {
+  width: 140%;
+}
+
 .above-title {
   text-transform: uppercase;
   color: #ff3998;
+}
+
+.sign-up-btn {
+  padding: 20px 50px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  background-color: transparent;
+  border: 3px solid red;
+  border-radius: 2rem;
+}
+
+.hero {
+  display: flex;
 }
 
 .paragraph {
@@ -29,4 +50,47 @@
   line-height: 30px;
   line-height: 150%;
   vertical-align: top;
+  color: rgba(196, 196, 196, 1);
+}
+
+/* UPSELL */
+
+.upsell {
+  background-color: rgb(81, 227, 19);
+  margin-bottom: 40px;
+}
+
+.upsell-title {
+  margin-bottom: 10px;
+}
+
+/* PRESS */
+
+.press {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* SHOWCASE */
+.showcase-title {
+  margin-bottom: 20px;
+}
+
+.showcase-subtitle {
+  margin-bottom: 30px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.card-1 {
+  max-width: 300px;
+}
+
+.cryto-price {
+  display: flex;
 }
