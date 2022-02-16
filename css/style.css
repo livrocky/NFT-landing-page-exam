@@ -103,10 +103,33 @@ header {
 
 /* PRESS */
 
-.press {
+.press-grid {
+  padding: 0px 30px 0px 30px;
   margin-bottom: 40px;
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "press1 press2"
+    "press3 press4";
+}
+
+.grid1 {
+  grid-area: grid1;
+}
+.grid2 {
+  grid-area: grid2;
+}
+.grid3 {
+  grid-area: grid3;
+}
+.grid4 {
+  grid-area: grid4;
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: center;
 }
 
 /* SHOWCASE */
