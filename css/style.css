@@ -1,7 +1,13 @@
 @import url(reset.css);
 @import url(common.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
 /* HEADERIS */
+
+header {
+  padding-left: 30px;
+}
+
 .logo {
   width: 100%;
 }
@@ -51,11 +57,12 @@
   margin-top: 30px;
   margin-bottom: 70px;
   background-color: transparent;
-  border: 3px solid red;
+  border: 4px solid red;
   border-radius: 2rem;
 }
 
 .hero {
+  padding: 30px;
   display: flex;
 }
 
@@ -69,13 +76,29 @@
 /* UPSELL */
 
 .upsell {
-  background-color: rgb(81, 227, 19);
-  margin-bottom: 40px;
-  margin-top: 80px;
+  background-image: url(background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 326px;
+  margin: 80px 0px 40px 0px;
+  padding: 110px 30px 30px;
 }
 
 .upsell-title {
-  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.upsell-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 /* PRESS */
