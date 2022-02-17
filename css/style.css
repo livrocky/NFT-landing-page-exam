@@ -10,13 +10,14 @@ header {
 
 .logo {
   width: 100%;
+  padding-top: 30px;
 }
 
 .header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   padding-right: 30px;
   max-width: 100%;
 }
@@ -38,7 +39,7 @@ header {
   width: 100%;
   position: relative;
   left: 200px;
-  bottom: 73px;
+  bottom: 80px;
 }
 
 .above-title {
@@ -62,7 +63,9 @@ header {
   margin-bottom: 70px;
   background-color: transparent;
   border: 4px solid red;
-  border-radius: 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .hero {
@@ -166,9 +169,13 @@ header {
 div.card-info {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  margin-top: -5px;
 }
 
-.card-1 {
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
   max-width: 290px;
   margin-left: 30px;
 }
@@ -201,8 +208,6 @@ div.card-info {
 }
 
 .price-and-eth {
-  font-size: 20px;
-  line-height: 100%;
   display: flex;
   align-items: center;
 }
@@ -214,6 +219,15 @@ div.card-info {
 
 .showcase-cards {
   display: flex;
+}
+
+.card-3,
+.card-4 {
+  display: none;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 hr.solid {
@@ -312,4 +326,49 @@ footer {
   color: rgba(153, 153, 153, 1);
   margin-top: 40px;
   margin-bottom: 60px;
+}
+
+/* MEDIA QUERY 1024p */
+
+@media screen and (min-width: 1024px) {
+  .burger-menu {
+    display: none;
+  }
+  .design {
+    width: 70%;
+    position: relative;
+    left: 325px;
+    bottom: 0px;
+  }
+
+  .pink-nft {
+    left: 80px;
+    bottom: 73px;
+  }
+  .upsell {
+    margin: 0px 40px 0px 40px;
+    background-size: contain;
+  }
+  .press-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 100px;
+    justify-items: center;
+  }
+  .main-text {
+    width: 40%;
+  }
+  .title {
+    font-size: 60px;
+    font-weight: 900;
+  }
+
+  .footer-upsell-nft {
+    left: 655px;
+    bottom: 0px;
+  }
+
+  /* .card-3,
+  .card-4 {
+    display: inline-block;
+  } */
 }
