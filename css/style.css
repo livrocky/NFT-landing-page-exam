@@ -1,6 +1,6 @@
 @import url(reset.css);
 @import url(common.css);
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 /* HEADERIS */
 
@@ -216,6 +216,10 @@ div.card-info {
   display: flex;
 }
 
+hr.solid {
+  border-top: 3px solid rgba(238, 238, 238, 1);
+}
+
 /* SHOWCARDS DONE */
 
 /* FOOTER UPSELL */
@@ -235,4 +239,77 @@ div.card-info {
 .footer-title {
   margin-bottom: 30px;
   font-size: 59px;
+}
+
+/* FOOTER UPSELL BAIGIASI */
+
+/* FOOTER */
+
+footer {
+  padding-left: 30px;
+}
+
+.footer-logo {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.footer-paragraph {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  vertical-align: top;
+  color: rgba(85, 85, 85, 1);
+}
+
+.social {
+  color: rgba(153, 153, 153, 1);
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.social-icons {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "ABOUT NFT"
+    "About OpenSea"
+    "Terms Maker"
+    "Legal Learn";
+}
+
+.footer-grid2 {
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "CONTACT SOCIAL"
+    "Press Twitter"
+    "Support Instagram";
+}
+
+.ABOUT,
+.NFT,
+.CONTACT,
+.SOCIAL {
+  font-weight: 500;
+}
+
+.footer-menu {
+  font-size: 16px;
+  width: 90%;
+}
+
+.copyright {
+  color: rgba(153, 153, 153, 1);
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
