@@ -2,7 +2,8 @@
 @import url(common.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
-/* HEADERIS */
+/* HEADERIS PRASIDEDA */
+/* NAV PRASIDEDA */
 
 header {
   padding-left: 30px;
@@ -27,8 +28,12 @@ header {
   font-size: larger;
 }
 
-/* HEADERIS BAIGIASI */
-/* HERO PRASIDEDA */
+.nav-menu {
+  display: none;
+}
+
+/* NAV BAIGIASI */
+/* HEADER UPSELL PRASIDEDA */
 
 .main-text {
   max-width: 63%;
@@ -69,7 +74,6 @@ header {
 }
 
 .hero {
-  padding: 30px;
   display: flex;
 }
 
@@ -80,7 +84,11 @@ header {
   color: rgba(85, 85, 85, 1);
 }
 
-/* UPSELL */
+/* HEADER UPSELL BAIGIASI */
+/* HEADER BAIGIASI */
+
+/* MAIN PRASIDEDA */
+/* MAIN UPSELL PRASIDEDA */
 
 .upsell {
   background-image: url(background.svg);
@@ -108,7 +116,8 @@ header {
   line-height: 30px;
 }
 
-/* PRESS */
+/* MAIN UPSELL BAIGIASI */
+/* MAIN PRESS PRASIDEDA */
 
 .press-grid {
   padding: 0px 30px 0px 30px;
@@ -139,7 +148,9 @@ header {
   text-align: center;
 }
 
-/* SHOWCASE */
+/* MAIN PRESS BAIGIASI */
+/* MAIN SHOWCASE PRASIDEDA */
+
 .showcase-title {
   margin-bottom: 20px;
   font-weight: 500;
@@ -150,13 +161,12 @@ header {
 .showcase-subtitle {
   margin-bottom: 30px;
   font-weight: normal;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 150%;
   color: #555555;
-  padding-left: 15px;
 }
 
-/* CARDS */
+/* CARDS PRASIDEDA */
 
 .card-info {
   display: flex;
@@ -176,8 +186,7 @@ div.card-info {
 .card-2,
 .card-3,
 .card-4 {
-  max-width: 290px;
-  margin-left: 30px;
+  width: 290px;
 }
 
 .first-half {
@@ -219,6 +228,7 @@ div.card-info {
 
 .showcase-cards {
   display: flex;
+  column-gap: 30px;
 }
 
 .card-3,
@@ -234,9 +244,16 @@ hr.solid {
   border-top: 3px solid rgba(238, 238, 238, 1);
 }
 
-/* SHOWCARDS DONE */
+/* CARDS BAIGIASI */
+/* MAIN SHOWCASE BAIGIASI */
+/* MAIN BAIGIASI */
 
-/* FOOTER UPSELL */
+/* FOOTER PRASIDEDA */
+/* FOOTER UPSELL PRASIDEDA */
+
+footer {
+  padding: 0px 30px 0px 30px;
+}
 
 .footer-upsell-nft {
   width: 100%;
@@ -256,12 +273,7 @@ hr.solid {
 }
 
 /* FOOTER UPSELL BAIGIASI */
-
-/* FOOTER */
-
-footer {
-  padding-left: 30px;
-}
+/* FOOTER BOTTOM PRASIDEDA */
 
 .footer-logo {
   margin-top: 150px;
@@ -271,7 +283,7 @@ footer {
 
 .footer-paragraph {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 150%;
   vertical-align: top;
   color: rgba(85, 85, 85, 1);
@@ -302,7 +314,7 @@ footer {
 .footer-grid2 {
   margin-top: 20px;
   display: grid;
-  grid-gap: 8px;
+  grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "CONTACT SOCIAL"
@@ -314,26 +326,63 @@ footer {
 .NFT,
 .CONTACT,
 .SOCIAL {
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .footer-menu {
-  font-size: 16px;
+  font-size: 20px;
   width: 90%;
 }
 
-.copyright {
+.bottom-info {
   color: rgba(153, 153, 153, 1);
   margin-top: 40px;
   margin-bottom: 60px;
+  font-size: 20px;
 }
 
-/* MEDIA QUERY 1024p */
+.launch-date {
+  display: none;
+}
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FOOTER BOTTOM BAIGIASI */
+/* FOOTER BAIGIASI */
+
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 1024px) {
   .burger-menu {
     display: none;
   }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    column-gap: 20px;
+  }
+
+  .features,
+  .about-nav,
+  .launch,
+  .sign-up {
+    text-decoration: none;
+    color: #555555;
+    padding-left: 5px;
+    font-size: 20px;
+  }
+
+  .sign-up {
+    color: rgba(255, 57, 152, 1);
+  }
+
   .design {
     width: 70%;
     position: relative;
@@ -344,14 +393,15 @@ footer {
   .pink-nft {
     left: 80px;
     bottom: 73px;
+    width: 90%;
   }
   .upsell {
-    margin: 0px 40px 0px 40px;
-    background-size: contain;
+    margin: 0px 30px 0px 30px;
+    border-radius: 1rem;
   }
   .press-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-bottom: 100px;
+    margin: 100px 0px 100px 0px;
     justify-items: center;
   }
   .main-text {
@@ -367,8 +417,48 @@ footer {
     bottom: 0px;
   }
 
-  /* .card-3,
+  .card-3,
   .card-4 {
-    display: inline-block;
-  } */
+    display: block;
+  }
+
+  .showcase-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+  }
+  .footer-grid2 {
+    margin-top: 0px;
+    margin-left: 60px;
+  }
+  .footer-left {
+    padding-right: 160px;
+  }
+
+  .launch-date {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pink-nft {
+    left: 200px;
+    bottom: 75px;
+    width: 80%;
+  }
+  .title {
+    font-size: 96px;
+  }
+  .paragraph {
+    font-size: 20px;
+  }
+  .footer-upsell-nft {
+    left: 835px;
+  }
 }
